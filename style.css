@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+.heder{
+    height: 5vh;
+    background-color: #ece4db;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    background-color: #f6fff8;
+    position: relative;           
+  }   
+  .menubar{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      box-shadow: 1px 1px 2px 2px rgba(100,0,0, 1);
+      margin-right: 50px;
+      border-radius: 12px;        
+  }
+ button{
+  height: 40px;
+  width: 100px;
+  margin: 10px 10px;
+  justify-content: center;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  background-color: red;
+  color: white;
+ }
+ 
+ img{
+  height: 600px;
+  width: 80vw;
+  box-shadow: 1px 1px 2px 2px rgba(0 ,0, 100, 1);
+  border-radius: 10px;
+ }
+
+button:hover{
+    background-color: #ff930f;
+}
+
+.popup{
+    position: absolute;
+    height: 450px;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid white; 
+    margin-left: 250px;  
+    display: none; 
+  } 
+.popup img{    
+    height: 30px;
+    width: 50px;
+    margin-left: 340px;
+    margin-top: 5px;
+}
+.popup h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 33px;
+    
+}
+.popup h3{
+    font-size:  28px;
+    color: white;
+    text-align: center;
+    
+}
+.popup button{
+    background-color: red;
+    color: white;
+    padding: 10px 10px;
+    margin-top: 60px;
+    margin-left: 140px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+}
+.offrcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    flex-wrap: wrap;
+    margin: 10px;   
+}
+.offr{
+    height: 100px;
+    width: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px;
+}
+#off1{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPF7WlECRcryciDms1Z4G5bpDn5L6Z9LJwBgFWO1Kw_f9LmIM_oT6uIY-g8Inz-F1uNBE&usqp=CAU");
+    background-size: cover;
+}
+#off2{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNQYQt5CWBlIQMpDCNj3TLkkSPpsjXo8cl-Q&usqp=CAU");
+    background-size: cover;
+}
+#off3{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg_OJoiQdfp39Tu91IpfUwfE20c-3mwLBkpg&usqp=CAU");
+    background-size: cover;
+}
+#off4{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9fssqA9zSEg9ssUMjB621-UusF1L0tK7Pvg&usqp=CAU");
+    background-size: cover;
+}
+#off5{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHa691HLB5Obvv7ygL6koWYQw5ypRzNP8Z5Q&usqp=CAU");
+    background-size: cover;
+}
+#off6{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9JRrgXRIRcxdDyiVbjI7vep4Jx6pHsramEQ&usqp=CAU");
+    background-size:cover;
+}

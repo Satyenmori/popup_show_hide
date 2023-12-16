@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clilevent | Popup | Show | Hide</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <body>
+    <div class="heder">
+      <marquee behavior="" direction=""
+        ><h2>Clik Button and Images Show On Frame</h2>
+      </marquee>
+    </div>
+    <div class="main">
+      <div class="btnbar">
+        <div class="menubar">
+          <button
+            class="btn1"
+            onclick="document.getElementById('framimg').src='https://thumbs.dreamstime.com/b/artwork-html-language-background-artwork-html-programming-language-could-be-used-desktop-wallpaper-154940631.jpg'"
+          >
+            HTML
+          </button>
+          <button
+            class="btn2"
+            onclick="document.getElementById('framimg').src='https://miro.medium.com/v2/resize:fit:1200/1*LyZcwuLWv2FArOumCxobpA.png'"
+          >
+            JavaScript
+          </button>
+          <button
+            class="btn3"
+            onclick="document.getElementById('framimg').src='https://wallpapercave.com/dwp1x/wp4924002.png'"
+          >
+            React
+          </button>
+          <button
+            class="btn4"
+            onclick="document.getElementById('framimg').src='https://e0.pxfuel.com/wallpapers/86/808/desktop-wallpaper-js-node-js.jpg'"
+          >
+            Node.JS
+          </button>
+          <button
+            class="btn5"
+            onclick="document.getElementById('framimg').src='https://vegastack.com/tutorials/content/images/2022/12/Install-MongoDB-on-Ubuntu-20.04.png'"
+          >
+            MongoDB
+          </button>
+          <button
+            class="btn6"
+            onclick="document.getElementById('framimg').src='https://thumbs.dreamstime.com/z/augusti-santa-clara-ca-usa-tata-consultancy-tcs-kontor-i-kiseldalen-%C3%A4r-ett-indian-en-multinationell-tj%C3%A4nst-och-194196734.jpg'"
+          >
+            TCS
+          </button>
+          <button
+            class="btn7"
+            onclick="document.getElementById('framimg').src='https://c8.alamy.com/comp/2RDNN34/bucharest-romania-july-10-2023-the-logo-of-the-indian-multinational-wipro-technologies-is-seen-on-top-of-a-building-in-bucharest-this-image-is-f-2RDNN34.jpg'"
+          >
+            Vipro
+          </button>
+          <button
+            class="btn8"
+            onclick="document.getElementById('framimg').src='https://st2.depositphotos.com/2001403/5248/i/950/depositphotos_52482363-stock-photo-exterior-view-of-a-google.jpg'"
+          >
+            Google
+          </button>
+          <button
+            class="btn9"
+            onclick="document.getElementById('framimg').src='https://cloudfront-us-east-2.images.arcpublishing.com/reuters/4I7AZMA6LBMYXJLIQI5B5NPKEY.jpg'"
+          >
+            Microsoft
+          </button>
+          <button
+            class="btn10"
+            onclick="document.getElementById('framimg').src='https://wallpapercave.com/wp/wp10339924.jpg'"
+          >
+            Infosis
+          </button>
+        </div>
+      </div>
+      <img
+        src="https://prioritynetworks.ca/wp-content/uploads/2021/01/iStock-1169873646-scaled.jpg"
+        alt="images"
+        id="framimg"
+      />
+      <div class="popup" id="show">
+        <img src="close.jpg" alt="clsbtn" id="close" />
+        <h2>Special Offer</h2>
+        <h3>50 % <span>OFF</span></h3>
+        <div class="offrcard">
+          <div class="offr" id="off1"></div>
+          <div class="offr" id="off2"></div>
+          <div class="offr" id="off3"></div>
+          <div class="offr" id="off4"></div>
+          <div class="offr" id="off5"></div>
+          <div class="offr" id="off6"></div>
+        </div>
+        <button>Get The Deal</button>
+      </div>
+    </div>
+
+    <script>
+      const popup = document.querySelector("#show");
+
+      setTimeout(show, 3000);
+
+      function show() {
+        popup.style.display = "block";
+      }
+
+      $(document).ready(() => {
+        $("#close").click(() => {
+          $("#show").hide(2000);
+        });
+      });
+    </script>
+  </body>
+</html>
